@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- font awasome link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Outfit:wght@300;500;600&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  
+  <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container{
+        height: 100vh;
+        width: 100%;
+        background-color: hsl(217, 54%, 11%);
+        display: grid;
+        place-items: center;
+       
+      }
+      main{
+        height: 600px;
+        width: 350px;
+        border-radius: 20px;
+        background-color:  hsl(216, 50%, 16%);
+        padding: 25px;
+
+      }
+      .imgg{
+        background-image: linear-gradient(rgb(0, 255, 247,0.7),rgba(0, 255, 247,0.7)),url(images/icon-view.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 300px;
+        border-radius:20px;
+        margin-bottom: 25px;
+      }
+      main .img{
+        height: 300px;
+        width: 300px;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        transition: 0.3s ease;
+        background-color: #16e4ff;
+      }
+      main .img:hover{
+        opacity: 0.3;
+      }
+
+      h1{
+        color: hsl(0, 0%, 100%);
+        font-size: 25px;
+        font-family: outfit,sans-serif;
+        font-weight: 600;
+        margin-bottom: 25px;
+        transition: 0.15s ease;
+      }
+      h1:hover{
+        color: #16e4ff;
+      }
+      p{
+        font-size: 18px;
+        color: hsl(215, 51%, 70%);
+        font-family: outfit,sans-serif;
+        font-weight: 300;
+        margin-bottom: 23px;
+        
+      }
+      .box{
+        height:40px;
+        width: 100%;
+        color: rgb(66, 66, 66);
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid hsl(215, 32%, 27%);
+        
+        padding-bottom: 25px;
+        
+
+      }
+      .box2{
+       
+        display: flex;
+        gap: 5px;
+      }
+      .own{
+        font-family: outfit,sans-serif;
+        font-weight: 500;
+        color: #37c4ce;
+      }
+      .box3 {
+        font-family: outfit,sans-serif;
+        font-weight: 300;
+        display: flex;
+        height: 18px;
+        gap: 5px;
+        place-items: center;
+        color: hsl(215, 51%, 70%);
+        
+      }
+      .box4{
+        height: 60px;
+        display: flex;
+        gap: 10px;
+        
+        align-items: center;
+        margin-top: 5px;
+        
+       ;
+      }
+      .box5{
+        height: 40px;
+        width: 40px;
+        background-image: url(/images/image-avatar.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 50px;
+        border: 1px solid #fff;
+       
+      }
+      .cr{
+       font-size: 17px;
+        margin-top: 20px;
+      }
+      .cr2{
+       
+        color: hsl(0, 0%, 100%);
+        margin-top: 20px;
+        font-size: 17px;
+       transition: 0.1s ease;
+        
+      }
+      .cr2:hover{
+        color: #16e4ff;
+      
+       
+     }
+     footer{
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      font-size: 100;
+      font-family: outfit;
+     width: 200px;
+     height: 30px;
+     background-color: #c8c8c839;
+     border-radius: 9px;
+     display: grid;
+     place-items: center;
+     }
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
+footer a{
+  
+  color: #fff;
+}
+footer:hover{
+  background-color: #c8c8c886;
+  color: #000;
+}
+      
+  </style>
+</head>
+<body>
+  <div class="container">
+   
+  <main>
+  <div class="imgg">
+    <img class="img" src="images/image-equilibrium.jpg" alt="cuib">
+  </div>
+    <h1>Equilibrium #3429</h1>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+    <div class="box">
+      <div class="box2">
+        <img src="images/icon-ethereum.svg" alt="ethereum">
+        <span class="own">0.041ETH</span>
+      </div>
+      <div class="box3">
+       <img src="images/icon-clock.svg" alt="clock">
+        <span class=two">3 days left</span>
+      </div>
+    </div>
+
+    <div class="box4">
+      <div class="box5">
+
+      </div>
+      <p class="cr">Creation of </p> 
+      <p class="cr2">Jules Wyvern</p>
+     
+    </div>
+   
+  </main>
+  <footer>
+    <a href="https://www.frontendmentor.io/home">Shahed Ahmed Utsho</a>
+  </footer>
+
+</div>
+
+ 
+
+  
+</body>
+</html>
